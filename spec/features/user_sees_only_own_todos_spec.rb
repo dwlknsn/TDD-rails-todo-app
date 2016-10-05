@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'UserSeesOnlyOwnTodos', type: :feature do
+feature 'UserSeesOnlyOwnTodos', type: :feature do
   scenario 'doesn\'t see other users\' todos' do
     Todo.create!(title: 'Buy milk', email: 'someone_else@example.com')
 

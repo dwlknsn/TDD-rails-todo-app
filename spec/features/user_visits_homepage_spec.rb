@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'UserVisitsHomepage', type: :feature do
+feature 'UserVisitsHomepage', type: :feature do
   scenario 'successfully' do
     visit(root_path)
 

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature 'UserCreatesTodo', type: :feature do
+feature 'UserCreatesTodo', type: :feature do
   scenario 'successfully' do
     sign_in
 
