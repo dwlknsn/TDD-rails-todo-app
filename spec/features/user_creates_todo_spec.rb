@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'UserCreatesTodo', type: :feature do
   scenario 'successfully' do
-    visit(root_path)
+    sign_in
 
     click_on('Add a New Todo')
     fill_in('Title', with: 'My First Todo')
