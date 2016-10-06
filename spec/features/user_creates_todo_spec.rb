@@ -3,11 +3,8 @@ require 'rails_helper'
 feature 'UserCreatesTodo', type: :feature do
   scenario 'successfully' do
     sign_in
+    create_todo('Buy milk')
 
-    click_on('Add a New Todo')
-    fill_in('Title', with: 'My First Todo')
-    click_on('Submit')
-
-    expect(page).to have_css('.todos li', text: 'My First Todo')
+    expect(page).to display_todo('Buy milk')
   end
 end
